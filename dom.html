@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo">Titulo de mi pagina Web</h1>
+
+    <div id="subtitulo"></div>
+
+    <p class="miparrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni iusto saepe culpa natus adipisci modi tenetur fugit sapiente, dolorum laudantium maxime aut dolores recusandae odit. Dolor quod quasi nesciunt ex!
+    Nulla est aliquam repellendus nesciunt, sunt aperiam doloribus! Perferendis error ut dolore aut earum recusandae officiis labore iure nam! Autem quam perferendis dolorum iusto voluptas expedita quo earum quae veniam!.</p>
+
+    <p id="elemento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quod a, voluptatem id doloremque praesentium, quo qui tempora ipsa dolorum est? Commodi, ab. Nisi similique provident excepturi fuga culpa placeat?
+    Optio laudantium dolore repellendus deleniti, unde asperiores, possimus quasi illum consequatur eum obcaecati aliquid nam repellat maiores animi minus ut ducimus. Incidunt id reiciendis facere molestias, corporis quibusdam accusamus neque.</p>
+
+    <p class="miparrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi quis obcaecati error, adipisci, illum nesciunt alias atque mollitia unde nam fugit molestiae, voluptates accusamus corrupti repellat quae dolorem. Cumque!
+    Illo quos repellat cumque aspernatur porro. Earum, dicta? Sed a similique, culpa ipsam nostrum corrupti saepe eum error esse nesciunt dignissimos ab, sunt vero, velit accusamus est molestiae? Eaque, reprehenderit.</p>
+
+
+
+    <script>
+        var parrafos = document.getElementsByTagName("p")
+        var elemento1 = document.getElementById("elemento")
+        var elementoClase = document.getElementsByClassName("miparrafo")
+        
+        //-----------CREAR ELEMENTO DESDE DOM----------
+        //Crear elemento
+        var nuevo = document.createElement("h3")
+
+        //Crear el contenido
+        var contenido = document.createTextNode("este es mi nuevo elemento")
+
+        //Juntar el elmento creado con el contenido
+        nuevo.appendChild(contenido)
+
+        //Agregar nuevo elemento creado a mi documento
+        document.getElementById("subtitulo").appendChild(nuevo)
+
+        //Creacion de atributos
+        nuevo.setAttribute("class", "misubtitulo")
+
+
+
+    </script>
+</body>
+</html>

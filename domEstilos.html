@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aplicar estilos DOM JS</title>
+    <style>
+        .titulo{
+            border:1px solid #000;
+            background: #34d7dd;
+            padding: 10px;
+            color:#fff;
+        }
+
+        .tituloGrande{
+            font-size:60px;
+        }
+    </style>
+</head>
+<body>
+    <!-- class="titulo  tituloGrande" -->
+    <h1 id="titulo" >Titulo de la pagina</h1>
+
+    <script>
+        var titulo = document.getElementById("titulo");
+
+        //Metodo 1
+        //titulo.className = "tituloGrande titulo"
+
+        //Metodo 2
+        titulo.style.color = "#000";
+        titulo.style.fontSize = "150px";
+        titulo.style.fontFamily = "Helvetica";
+
+    </script>
+</body>
+</html>

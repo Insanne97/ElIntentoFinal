@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar DOM js</title>
+</head>
+<body>
+    <ol id="lista" >
+        <li id="uno">Andres Carlosama</li>
+        <li>Pedro Perez</li>
+    </ol>
+    <script>
+        //Editar contenido
+        var primerElemento = document.getElementById("uno");
+        /*
+            //Metodo 1
+            primerElemento.innerHTML = "Paola <i>Perez</i>"; //Toma en cuenta las etiquetas
+
+            //Metodo 2
+            primerElemento.textContent = "Paola Hernandez"; //No toma en cuenta las etiquetas
+
+        */
+        //Reemplazar elementos
+        /*
+        var elemento = document.createElement("li");
+        var contenido = document.createTextNode("Pablito Castro")
+        elemento.appendChild(contenido)
+
+        var contenedor = document.getElementById("lista")
+        var posicion = document.getElementsByTagName("li")[0]
+        contenedor.replaceChild(elemento, posicion)
+        */
+
+        //Eliminar elementos
+        var contenedor = document.getElementById("lista")
+        var posicion = document.getElementsByTagName("li")[0]
+        contenedor.removeChild(posicion)
+
+    </script>
+</body>
+</html>
